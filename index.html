@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FISA</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .section{
+        background-color: rgba(124, 252, 0, 0.5);   /*Change the color of the background*/
+      }
+      .navBar {
+        background-color: rgba(0, 128, 0, 0.6);     /*Change the color of the bar on the top*/
+        color: white;                               /*Change the text color of your name*/
+      }
+      .main {
+        flex-direction: row;      /*Change position of image to right or left*/
+                      /*row or row-reverse*/
+      }
+      .content {
+        color: #525252; /*change color of the text*/
+      }
+      
+      @media screen and (width <= 768px) {
+        html {
+          height: 100%;
+          width: 100%;
+          overflow-y: visible;
+        }
+        .section{
+          height: 100%;
+          width: 100%;
+          margin: 0;
+        }
+        .main {
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+        }
+        .image{
+          margin-top: 50px;
+        }
+        img{
+          width: 70%;
+          height: fit-content;
+        }
+        .content div{
+          width: 100%;
+        }
+        .content div h1{
+          display: flex;
+          justify-content: center;
+        }
+        .list{
+          align-items: flex-start;
+          width: 100%;
+        }
+        .navBar{
+          display: flex;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="navBar">
+        <!--Change to your name -->
+        <h2>Full name</h2>
+      </div>
+      <div class="main">
+        <!--Change the link of the image and the animal name -->
+        <div class="image">
+          <img
+            src="https://www.shutterstock.com/image-vector/vector-cute-baby-panda-cartoon-600nw-2427356853.jpg"
+            alt="panda"
+          />
+        </div>
+        <div class="content">
+          <!--Change the name of the animal -->
+          <div><h1>I am Panda</h1></div>
+          <div>
+            <ul class=" list">
+              <!--Change the reasons-->
+              <li><p>Reason 1</p></li>
+              <li><p>Reason 2</p></li>
+              <li><p>Reason 3</p></li>
+              <li><p>Reason 4</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
